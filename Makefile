@@ -11,6 +11,9 @@ DATE_BEGIN=
 # should be in UTC time.
 DATE_END=
 
+install-local:
+	mvn install:install-file -DgroupId=com.zugaldia.noaa -DartifactId=ndfd -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dfile=ndfd/target/ndfd-1.0-SNAPSHOT.jar
+
 test-fixtures:
 	#
 	# Unsummarized
