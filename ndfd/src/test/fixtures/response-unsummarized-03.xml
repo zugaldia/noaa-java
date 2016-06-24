@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="time-series" operational-mode="official">
+      <title>NOAA's National Weather Service Forecast Data</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT1H">2016-06-24T14:33:57Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+      <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="34.99" longitude="-82.03"/>
+    </location>
+    <location>
+      <location-key>point2</location-key>
+      <point latitude="35.12" longitude="-82.01"/>
+    </location>
+    <location>
+      <location-key>point3</location-key>
+      <point latitude="35.26" longitude="-82.00"/>
+    </location>
+    <location>
+      <location-key>point4</location-key>
+      <point latitude="35.39" longitude="-81.98"/>
+    </location>
+    <location>
+      <location-key>point5</location-key>
+      <point latitude="35.52" longitude="-81.96"/>
+    </location>
+    <location>
+      <location-key>point6</location-key>
+      <point latitude="34.97" longitude="-81.86"/>
+    </location>
+    <location>
+      <location-key>point7</location-key>
+      <point latitude="35.11" longitude="-81.85"/>
+    </location>
+    <location>
+      <location-key>point8</location-key>
+      <point latitude="35.24" longitude="-81.83"/>
+    </location>
+    <location>
+      <location-key>point9</location-key>
+      <point latitude="35.38" longitude="-81.82"/>
+    </location>
+    <location>
+      <location-key>point10</location-key>
+      <point latitude="35.51" longitude="-81.80"/>
+    </location>
+    <location>
+      <location-key>point11</location-key>
+      <point latitude="34.96" longitude="-81.70"/>
+    </location>
+    <location>
+      <location-key>point12</location-key>
+      <point latitude="35.09" longitude="-81.68"/>
+    </location>
+    <location>
+      <location-key>point13</location-key>
+      <point latitude="35.23" longitude="-81.67"/>
+    </location>
+    <location>
+      <location-key>point14</location-key>
+      <point latitude="35.36" longitude="-81.65"/>
+    </location>
+    <location>
+      <location-key>point15</location-key>
+      <point latitude="35.50" longitude="-81.63"/>
+    </location>
+    <location>
+      <location-key>point16</location-key>
+      <point latitude="34.95" longitude="-81.54"/>
+    </location>
+    <location>
+      <location-key>point17</location-key>
+      <point latitude="35.08" longitude="-81.52"/>
+    </location>
+    <location>
+      <location-key>point18</location-key>
+      <point latitude="35.22" longitude="-81.50"/>
+    </location>
+    <location>
+      <location-key>point19</location-key>
+      <point latitude="35.35" longitude="-81.49"/>
+    </location>
+    <location>
+      <location-key>point20</location-key>
+      <point latitude="35.48" longitude="-81.47"/>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=34.99&amp;textField2=-82.03</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point2">http://forecast.weather.gov/MapClick.php?textField1=35.12&amp;textField2=-82.01</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point3">http://forecast.weather.gov/MapClick.php?textField1=35.26&amp;textField2=-82.00</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point4">http://forecast.weather.gov/MapClick.php?textField1=35.39&amp;textField2=-81.98</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point5">http://forecast.weather.gov/MapClick.php?textField1=35.52&amp;textField2=-81.96</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point6">http://forecast.weather.gov/MapClick.php?textField1=34.97&amp;textField2=-81.86</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point7">http://forecast.weather.gov/MapClick.php?textField1=35.11&amp;textField2=-81.85</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point8">http://forecast.weather.gov/MapClick.php?textField1=35.24&amp;textField2=-81.83</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point9">http://forecast.weather.gov/MapClick.php?textField1=35.38&amp;textField2=-81.82</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point10">http://forecast.weather.gov/MapClick.php?textField1=35.51&amp;textField2=-81.80</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point11">http://forecast.weather.gov/MapClick.php?textField1=34.96&amp;textField2=-81.70</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point12">http://forecast.weather.gov/MapClick.php?textField1=35.09&amp;textField2=-81.68</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point13">http://forecast.weather.gov/MapClick.php?textField1=35.23&amp;textField2=-81.67</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point14">http://forecast.weather.gov/MapClick.php?textField1=35.36&amp;textField2=-81.65</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point15">http://forecast.weather.gov/MapClick.php?textField1=35.50&amp;textField2=-81.63</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point16">http://forecast.weather.gov/MapClick.php?textField1=34.95&amp;textField2=-81.54</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point17">http://forecast.weather.gov/MapClick.php?textField1=35.08&amp;textField2=-81.52</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point18">http://forecast.weather.gov/MapClick.php?textField1=35.22&amp;textField2=-81.50</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point19">http://forecast.weather.gov/MapClick.php?textField1=35.35&amp;textField2=-81.49</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point20">http://forecast.weather.gov/MapClick.php?textField1=35.48&amp;textField2=-81.47</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time>2016-06-24T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-24T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-30T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T20:00:00-04:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n6-2</layout-key>
+      <start-valid-time>2016-06-24T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T09:00:00-04:00</end-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>91</value>
+        <value>90</value>
+        <value>89</value>
+        <value>90</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>73</value>
+        <value>71</value>
+        <value>71</value>
+        <value>72</value>
+        <value>70</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point2">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>91</value>
+        <value>89</value>
+        <value>89</value>
+        <value>91</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>70</value>
+        <value>70</value>
+        <value>68</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point3">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>91</value>
+        <value>89</value>
+        <value>88</value>
+        <value>91</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>70</value>
+        <value>69</value>
+        <value>69</value>
+        <value>69</value>
+        <value>67</value>
+        <value>66</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point4">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>96</value>
+        <value>91</value>
+        <value>89</value>
+        <value>88</value>
+        <value>91</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>70</value>
+        <value>69</value>
+        <value>69</value>
+        <value>69</value>
+        <value>66</value>
+        <value>66</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point5">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>97</value>
+        <value>92</value>
+        <value>90</value>
+        <value>89</value>
+        <value>91</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>68</value>
+        <value>68</value>
+        <value>68</value>
+        <value>68</value>
+        <value>65</value>
+        <value>65</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point6">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>97</value>
+        <value>92</value>
+        <value>90</value>
+        <value>89</value>
+        <value>91</value>
+        <value>91</value>
+        <value>89</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>74</value>
+        <value>72</value>
+        <value>71</value>
+        <value>72</value>
+        <value>70</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point7">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>96</value>
+        <value>91</value>
+        <value>89</value>
+        <value>88</value>
+        <value>90</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>70</value>
+        <value>70</value>
+        <value>69</value>
+        <value>68</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point8">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>87</value>
+        <value>90</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>70</value>
+        <value>69</value>
+        <value>69</value>
+        <value>69</value>
+        <value>67</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point9">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>87</value>
+        <value>90</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>69</value>
+        <value>69</value>
+        <value>68</value>
+        <value>69</value>
+        <value>66</value>
+        <value>66</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point10">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>93</value>
+        <value>88</value>
+        <value>87</value>
+        <value>86</value>
+        <value>89</value>
+        <value>87</value>
+        <value>86</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>70</value>
+        <value>69</value>
+        <value>69</value>
+        <value>70</value>
+        <value>67</value>
+        <value>66</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point11">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>96</value>
+        <value>92</value>
+        <value>90</value>
+        <value>89</value>
+        <value>91</value>
+        <value>91</value>
+        <value>89</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>73</value>
+        <value>71</value>
+        <value>71</value>
+        <value>71</value>
+        <value>70</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point12">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>91</value>
+        <value>89</value>
+        <value>88</value>
+        <value>90</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>72</value>
+        <value>70</value>
+        <value>70</value>
+        <value>71</value>
+        <value>69</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point13">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>87</value>
+        <value>90</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>70</value>
+        <value>70</value>
+        <value>68</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point14">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>87</value>
+        <value>90</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>69</value>
+        <value>70</value>
+        <value>67</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point15">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>87</value>
+        <value>90</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>70</value>
+        <value>70</value>
+        <value>67</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point16">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>96</value>
+        <value>92</value>
+        <value>90</value>
+        <value>89</value>
+        <value>91</value>
+        <value>91</value>
+        <value>89</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>73</value>
+        <value>71</value>
+        <value>71</value>
+        <value>71</value>
+        <value>70</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point17">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>90</value>
+        <value>89</value>
+        <value>88</value>
+        <value>90</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>72</value>
+        <value>71</value>
+        <value>70</value>
+        <value>71</value>
+        <value>69</value>
+        <value>69</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point18">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>89</value>
+        <value>89</value>
+        <value>88</value>
+        <value>90</value>
+        <value>90</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>70</value>
+        <value>70</value>
+        <value>68</value>
+        <value>68</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point19">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>90</value>
+        <value>90</value>
+        <value>88</value>
+        <value>91</value>
+        <value>90</value>
+        <value>88</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>70</value>
+        <value>69</value>
+        <value>70</value>
+        <value>67</value>
+        <value>67</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point20">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>95</value>
+        <value>90</value>
+        <value>89</value>
+        <value>88</value>
+        <value>91</value>
+        <value>89</value>
+        <value>87</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>71</value>
+        <value>69</value>
+        <value>69</value>
+        <value>70</value>
+        <value>67</value>
+        <value>66</value>
+      </temperature>
+    </parameters>
+  </data>
+</dwml>

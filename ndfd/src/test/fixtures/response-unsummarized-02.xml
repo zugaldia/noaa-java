@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="time-series" operational-mode="official">
+      <title>NOAA's National Weather Service Forecast Data</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT1H">2016-06-24T14:33:56Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+      <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="38.99" longitude="-77.02"/>
+    </location>
+    <location>
+      <location-key>point2</location-key>
+      <point latitude="39.70" longitude="-104.80"/>
+    </location>
+    <location>
+      <location-key>point3</location-key>
+      <point latitude="47.60" longitude="-122.30"/>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=38.99&amp;textField2=-77.02</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point2">http://forecast.weather.gov/MapClick.php?textField1=39.70&amp;textField2=-104.80</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point3">http://forecast.weather.gov/MapClick.php?textField1=47.60&amp;textField2=-122.30</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time>2016-06-24T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-24T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T20:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-30T08:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T20:00:00-04:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n6-2</layout-key>
+      <start-valid-time>2016-06-24T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T09:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T20:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T09:00:00-04:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-3</layout-key>
+      <start-valid-time>2016-06-24T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-24T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-25T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-25T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-26T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-26T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-27T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-27T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-28T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-28T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-29T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-29T20:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-30T08:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-30T20:00:00-06:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n6-4</layout-key>
+      <start-valid-time>2016-06-24T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-25T09:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-25T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-26T09:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-26T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-27T09:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-27T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-28T09:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-28T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-29T09:00:00-06:00</end-valid-time>
+      <start-valid-time>2016-06-29T20:00:00-06:00</start-valid-time>
+      <end-valid-time>2016-06-30T09:00:00-06:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-5</layout-key>
+      <start-valid-time>2016-06-24T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-24T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-25T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-25T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-26T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-26T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-27T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-27T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-28T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-28T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-29T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-29T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-30T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-30T20:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n6-6</layout-key>
+      <start-valid-time>2016-06-24T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-25T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-25T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-26T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-26T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-27T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-27T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-28T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-28T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-29T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2016-06-29T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2016-06-30T09:00:00-07:00</end-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>84</value>
+        <value>84</value>
+        <value>88</value>
+        <value>82</value>
+        <value>83</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+        <name>Daily Minimum Temperature</name>
+        <value>66</value>
+        <value>63</value>
+        <value>65</value>
+        <value>69</value>
+        <value>66</value>
+        <value>64</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point2">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-3">
+        <name>Daily Maximum Temperature</name>
+        <value>94</value>
+        <value>84</value>
+        <value>89</value>
+        <value>90</value>
+        <value>90</value>
+        <value>86</value>
+        <value>84</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-4">
+        <name>Daily Minimum Temperature</name>
+        <value>62</value>
+        <value>58</value>
+        <value>61</value>
+        <value>62</value>
+        <value>64</value>
+        <value>61</value>
+      </temperature>
+    </parameters>
+    <parameters applicable-location="point3">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-5">
+        <name>Daily Maximum Temperature</name>
+        <value>64</value>
+        <value>70</value>
+        <value>75</value>
+        <value>77</value>
+        <value>75</value>
+        <value>75</value>
+        <value>76</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-6">
+        <name>Daily Minimum Temperature</name>
+        <value>55</value>
+        <value>55</value>
+        <value>57</value>
+        <value>59</value>
+        <value>58</value>
+        <value>57</value>
+      </temperature>
+    </parameters>
+  </data>
+</dwml>

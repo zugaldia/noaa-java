@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:NdfdForecastCollection 
+xmlns="http://www.weather.gov/forecasts/xml/OGC_services" 
+xmlns:app="http://www.weather.gov/forecasts/xml/OGC_services" 
+xmlns:ows="http://www.opengis.net/ows"
+xmlns:ogc="http://www.opengis.net/ogc"
+xmlns:wfs="http://www.opengis.net/wfs"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.weather.gov/forecasts/xml/OGC_services http://www.weather.gov/forecasts/xml/OGC_services/schema/dwGML_WFS_GMLv212.xsd "> 
+
+   <gml:boundedBy>
+      <gml:Box srsName="EPSG:4326">
+         <gml:coordinates>-122.30,38.99 -77.02,47.6</gml:coordinates>
+      </gml:Box>
+   </gml:boundedBy>
+   <gml:featureMember>
+      <app:Forecast_Gml2Point>
+         <gml:position>
+            <gml:Point srsName="EPSG:4326">
+               <gml:coordinates>-77.02,38.99</gml:coordinates>
+            </gml:Point>
+         </gml:position>
+         <app:validTime>2016-06-24T17:34:00</app:validTime>
+         <app:maximumTemperature>81.0</app:maximumTemperature>
+         <app:weatherPhrase>Chance Rain Showers</app:weatherPhrase>
+      </app:Forecast_Gml2Point>
+   </gml:featureMember>
+
+   <gml:featureMember>
+      <app:Forecast_Gml2Point>
+         <gml:position>
+            <gml:Point srsName="EPSG:4326">
+               <gml:coordinates>-104.80,39.70</gml:coordinates>
+            </gml:Point>
+         </gml:position>
+         <app:validTime>2016-06-24T17:34:00</app:validTime>
+         <app:maximumTemperature>94.0</app:maximumTemperature>
+         <app:weatherPhrase>Partly Sunny</app:weatherPhrase>
+      </app:Forecast_Gml2Point>
+   </gml:featureMember>
+
+   <gml:featureMember>
+      <app:Forecast_Gml2Point>
+         <gml:position>
+            <gml:Point srsName="EPSG:4326">
+               <gml:coordinates>-122.30,47.6</gml:coordinates>
+            </gml:Point>
+         </gml:position>
+         <app:validTime>2016-06-24T17:34:00</app:validTime>
+         <app:maximumTemperature>64.0</app:maximumTemperature>
+         <app:weatherPhrase>Chance Rain Showers</app:weatherPhrase>
+      </app:Forecast_Gml2Point>
+   </gml:featureMember>
+
+</app:NdfdForecastCollection>

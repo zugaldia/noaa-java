@@ -1,0 +1,1754 @@
+<?xml version="1.0"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="dwmlByDay" operational-mode="official">
+      <title>NOAA's National Weather Service Forecast by 24 Hour Period</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT1H">2016-06-24T14:34:09Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+      <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="39.97" longitude="-78.00"/>
+    </location>
+    <location>
+      <location-key>point2</location-key>
+      <point latitude="39.92" longitude="-77.95"/>
+    </location>
+    <location>
+      <location-key>point3</location-key>
+      <point latitude="39.87" longitude="-77.90"/>
+    </location>
+    <location>
+      <location-key>point4</location-key>
+      <point latitude="39.82" longitude="-77.85"/>
+    </location>
+    <location>
+      <location-key>point5</location-key>
+      <point latitude="39.77" longitude="-77.80"/>
+    </location>
+    <location>
+      <location-key>point6</location-key>
+      <point latitude="39.72" longitude="-77.75"/>
+    </location>
+    <location>
+      <location-key>point7</location-key>
+      <point latitude="39.67" longitude="-77.70"/>
+    </location>
+    <location>
+      <location-key>point8</location-key>
+      <point latitude="39.62" longitude="-77.65"/>
+    </location>
+    <location>
+      <location-key>point9</location-key>
+      <point latitude="39.57" longitude="-77.60"/>
+    </location>
+    <location>
+      <location-key>point10</location-key>
+      <point latitude="39.52" longitude="-77.55"/>
+    </location>
+    <location>
+      <location-key>point11</location-key>
+      <point latitude="39.47" longitude="-77.50"/>
+    </location>
+    <location>
+      <location-key>point12</location-key>
+      <point latitude="39.42" longitude="-77.45"/>
+    </location>
+    <location>
+      <location-key>point13</location-key>
+      <point latitude="39.37" longitude="-77.40"/>
+    </location>
+    <location>
+      <location-key>point14</location-key>
+      <point latitude="39.32" longitude="-77.35"/>
+    </location>
+    <location>
+      <location-key>point15</location-key>
+      <point latitude="39.27" longitude="-77.30"/>
+    </location>
+    <location>
+      <location-key>point16</location-key>
+      <point latitude="39.22" longitude="-77.25"/>
+    </location>
+    <location>
+      <location-key>point17</location-key>
+      <point latitude="39.17" longitude="-77.21"/>
+    </location>
+    <location>
+      <location-key>point18</location-key>
+      <point latitude="39.12" longitude="-77.16"/>
+    </location>
+    <location>
+      <location-key>point19</location-key>
+      <point latitude="39.08" longitude="-77.11"/>
+    </location>
+    <location>
+      <location-key>point20</location-key>
+      <point latitude="39.03" longitude="-77.06"/>
+    </location>
+    <location>
+      <location-key>point21</location-key>
+      <point latitude="38.98" longitude="-77.01"/>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=39.97&amp;textField2=-78.00</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point2">http://forecast.weather.gov/MapClick.php?textField1=39.92&amp;textField2=-77.95</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point3">http://forecast.weather.gov/MapClick.php?textField1=39.87&amp;textField2=-77.90</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point4">http://forecast.weather.gov/MapClick.php?textField1=39.82&amp;textField2=-77.85</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point5">http://forecast.weather.gov/MapClick.php?textField1=39.77&amp;textField2=-77.80</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point6">http://forecast.weather.gov/MapClick.php?textField1=39.72&amp;textField2=-77.75</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point7">http://forecast.weather.gov/MapClick.php?textField1=39.67&amp;textField2=-77.70</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point8">http://forecast.weather.gov/MapClick.php?textField1=39.62&amp;textField2=-77.65</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point9">http://forecast.weather.gov/MapClick.php?textField1=39.57&amp;textField2=-77.60</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point10">http://forecast.weather.gov/MapClick.php?textField1=39.52&amp;textField2=-77.55</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point11">http://forecast.weather.gov/MapClick.php?textField1=39.47&amp;textField2=-77.50</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point12">http://forecast.weather.gov/MapClick.php?textField1=39.42&amp;textField2=-77.45</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point13">http://forecast.weather.gov/MapClick.php?textField1=39.37&amp;textField2=-77.40</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point14">http://forecast.weather.gov/MapClick.php?textField1=39.32&amp;textField2=-77.35</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point15">http://forecast.weather.gov/MapClick.php?textField1=39.27&amp;textField2=-77.30</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point16">http://forecast.weather.gov/MapClick.php?textField1=39.22&amp;textField2=-77.25</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point17">http://forecast.weather.gov/MapClick.php?textField1=39.17&amp;textField2=-77.21</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point18">http://forecast.weather.gov/MapClick.php?textField1=39.12&amp;textField2=-77.16</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point19">http://forecast.weather.gov/MapClick.php?textField1=39.08&amp;textField2=-77.11</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point20">http://forecast.weather.gov/MapClick.php?textField1=39.03&amp;textField2=-77.06</moreWeatherInformation>
+    <moreWeatherInformation applicable-location="point21">http://forecast.weather.gov/MapClick.php?textField1=38.98&amp;textField2=-77.01</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="24hourly">
+      <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time>2016-06-24T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-30T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-07-01T06:00:00-04:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="12hourly">
+      <layout-key>k-p12h-n14-2</layout-key>
+      <start-valid-time>2016-06-24T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-24T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-24T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-25T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-25T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-26T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-26T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-27T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-27T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-28T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-28T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-29T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-29T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T06:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-30T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-06-30T18:00:00-04:00</end-valid-time>
+      <start-valid-time>2016-06-30T18:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-07-01T06:00:00-04:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="24hourly">
+      <layout-key>k-p7d-n1-3</layout-key>
+      <start-valid-time>2016-06-24T06:00:00-04:00</start-valid-time>
+      <end-valid-time>2016-07-01T06:00:00-04:00</end-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>77</value>
+        <value>80</value>
+        <value>85</value>
+        <value>84</value>
+        <value>83</value>
+        <value>78</value>
+        <value>79</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>61</value>
+        <value>61</value>
+        <value>63</value>
+        <value>67</value>
+        <value>59</value>
+        <value>58</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>42</value>
+        <value>29</value>
+        <value>3</value>
+        <value>3</value>
+        <value>2</value>
+        <value>21</value>
+        <value>45</value>
+        <value>19</value>
+        <value>28</value>
+        <value>17</value>
+        <value>11</value>
+        <value>1</value>
+        <value>5</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra20.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point2">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>75</value>
+        <value>78</value>
+        <value>83</value>
+        <value>82</value>
+        <value>81</value>
+        <value>76</value>
+        <value>77</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>61</value>
+        <value>62</value>
+        <value>64</value>
+        <value>67</value>
+        <value>58</value>
+        <value>59</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>42</value>
+        <value>29</value>
+        <value>3</value>
+        <value>3</value>
+        <value>2</value>
+        <value>20</value>
+        <value>46</value>
+        <value>19</value>
+        <value>28</value>
+        <value>20</value>
+        <value>11</value>
+        <value>1</value>
+        <value>5</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra20.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point3">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>82</value>
+        <value>85</value>
+        <value>84</value>
+        <value>85</value>
+        <value>79</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>63</value>
+        <value>66</value>
+        <value>69</value>
+        <value>63</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>44</value>
+        <value>29</value>
+        <value>3</value>
+        <value>3</value>
+        <value>2</value>
+        <value>18</value>
+        <value>44</value>
+        <value>18</value>
+        <value>28</value>
+        <value>21</value>
+        <value>11</value>
+        <value>2</value>
+        <value>5</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra20.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/bkn.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point4">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>79</value>
+        <value>82</value>
+        <value>85</value>
+        <value>85</value>
+        <value>85</value>
+        <value>80</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>62</value>
+        <value>64</value>
+        <value>68</value>
+        <value>62</value>
+        <value>60</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>29</value>
+        <value>3</value>
+        <value>3</value>
+        <value>2</value>
+        <value>16</value>
+        <value>43</value>
+        <value>16</value>
+        <value>29</value>
+        <value>22</value>
+        <value>12</value>
+        <value>2</value>
+        <value>5</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra20.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/bkn.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point5">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>79</value>
+        <value>82</value>
+        <value>85</value>
+        <value>85</value>
+        <value>85</value>
+        <value>80</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>62</value>
+        <value>64</value>
+        <value>68</value>
+        <value>62</value>
+        <value>60</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>50</value>
+        <value>29</value>
+        <value>3</value>
+        <value>2</value>
+        <value>1</value>
+        <value>15</value>
+        <value>41</value>
+        <value>15</value>
+        <value>29</value>
+        <value>24</value>
+        <value>12</value>
+        <value>2</value>
+        <value>6</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Thunderstorms">
+          <value coverage="scattered" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="scattered" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra20.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/bkn.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point6">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>79</value>
+        <value>83</value>
+        <value>85</value>
+        <value>83</value>
+        <value>85</value>
+        <value>80</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>62</value>
+        <value>62</value>
+        <value>63</value>
+        <value>67</value>
+        <value>62</value>
+        <value>59</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>46</value>
+        <value>34</value>
+        <value>2</value>
+        <value>2</value>
+        <value>4</value>
+        <value>10</value>
+        <value>42</value>
+        <value>23</value>
+        <value>32</value>
+        <value>26</value>
+        <value>14</value>
+        <value>9</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point7">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>84</value>
+        <value>84</value>
+        <value>83</value>
+        <value>85</value>
+        <value>80</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>67</value>
+        <value>62</value>
+        <value>59</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>46</value>
+        <value>34</value>
+        <value>2</value>
+        <value>2</value>
+        <value>4</value>
+        <value>11</value>
+        <value>43</value>
+        <value>23</value>
+        <value>32</value>
+        <value>26</value>
+        <value>14</value>
+        <value>9</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point8">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>83</value>
+        <value>85</value>
+        <value>82</value>
+        <value>85</value>
+        <value>80</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>62</value>
+        <value>61</value>
+        <value>64</value>
+        <value>68</value>
+        <value>62</value>
+        <value>60</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>34</value>
+        <value>2</value>
+        <value>2</value>
+        <value>3</value>
+        <value>10</value>
+        <value>44</value>
+        <value>23</value>
+        <value>33</value>
+        <value>28</value>
+        <value>14</value>
+        <value>9</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point9">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>77</value>
+        <value>80</value>
+        <value>82</value>
+        <value>81</value>
+        <value>82</value>
+        <value>77</value>
+        <value>78</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>62</value>
+        <value>62</value>
+        <value>64</value>
+        <value>68</value>
+        <value>60</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>34</value>
+        <value>2</value>
+        <value>2</value>
+        <value>3</value>
+        <value>11</value>
+        <value>45</value>
+        <value>23</value>
+        <value>35</value>
+        <value>30</value>
+        <value>14</value>
+        <value>9</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point10">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>79</value>
+        <value>82</value>
+        <value>83</value>
+        <value>80</value>
+        <value>83</value>
+        <value>78</value>
+        <value>79</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>62</value>
+        <value>60</value>
+        <value>63</value>
+        <value>66</value>
+        <value>61</value>
+        <value>59</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>32</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>10</value>
+        <value>46</value>
+        <value>24</value>
+        <value>36</value>
+        <value>31</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point11">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>78</value>
+        <value>81</value>
+        <value>81</value>
+        <value>80</value>
+        <value>83</value>
+        <value>78</value>
+        <value>79</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>67</value>
+        <value>61</value>
+        <value>60</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>31</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>9</value>
+        <value>45</value>
+        <value>24</value>
+        <value>35</value>
+        <value>32</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point12">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>84</value>
+        <value>83</value>
+        <value>86</value>
+        <value>81</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>65</value>
+        <value>68</value>
+        <value>64</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>29</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>9</value>
+        <value>43</value>
+        <value>24</value>
+        <value>34</value>
+        <value>32</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point13">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>85</value>
+        <value>83</value>
+        <value>87</value>
+        <value>82</value>
+        <value>83</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>68</value>
+        <value>64</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>26</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>9</value>
+        <value>42</value>
+        <value>25</value>
+        <value>33</value>
+        <value>32</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point14">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>84</value>
+        <value>84</value>
+        <value>83</value>
+        <value>86</value>
+        <value>81</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>67</value>
+        <value>63</value>
+        <value>60</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>24</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>8</value>
+        <value>42</value>
+        <value>25</value>
+        <value>33</value>
+        <value>32</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point15">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>83</value>
+        <value>84</value>
+        <value>83</value>
+        <value>86</value>
+        <value>81</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>68</value>
+        <value>63</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>22</value>
+        <value>1</value>
+        <value>3</value>
+        <value>3</value>
+        <value>8</value>
+        <value>42</value>
+        <value>26</value>
+        <value>33</value>
+        <value>33</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point16">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>83</value>
+        <value>84</value>
+        <value>82</value>
+        <value>86</value>
+        <value>80</value>
+        <value>81</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>68</value>
+        <value>63</value>
+        <value>61</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>21</value>
+        <value>1</value>
+        <value>3</value>
+        <value>3</value>
+        <value>8</value>
+        <value>42</value>
+        <value>26</value>
+        <value>34</value>
+        <value>33</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point17">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>84</value>
+        <value>83</value>
+        <value>86</value>
+        <value>81</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>63</value>
+        <value>61</value>
+        <value>64</value>
+        <value>68</value>
+        <value>64</value>
+        <value>62</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>20</value>
+        <value>1</value>
+        <value>3</value>
+        <value>3</value>
+        <value>7</value>
+        <value>41</value>
+        <value>27</value>
+        <value>34</value>
+        <value>33</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point18">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>80</value>
+        <value>83</value>
+        <value>84</value>
+        <value>83</value>
+        <value>87</value>
+        <value>81</value>
+        <value>82</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>64</value>
+        <value>61</value>
+        <value>64</value>
+        <value>69</value>
+        <value>64</value>
+        <value>63</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>19</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>7</value>
+        <value>39</value>
+        <value>27</value>
+        <value>34</value>
+        <value>34</value>
+        <value>14</value>
+        <value>11</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra30.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point19">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>84</value>
+        <value>84</value>
+        <value>87</value>
+        <value>82</value>
+        <value>83</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>65</value>
+        <value>62</value>
+        <value>65</value>
+        <value>69</value>
+        <value>65</value>
+        <value>63</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>20</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>7</value>
+        <value>38</value>
+        <value>28</value>
+        <value>33</value>
+        <value>35</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point20">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>83</value>
+        <value>84</value>
+        <value>84</value>
+        <value>87</value>
+        <value>82</value>
+        <value>83</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>65</value>
+        <value>62</value>
+        <value>65</value>
+        <value>70</value>
+        <value>65</value>
+        <value>64</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>49</value>
+        <value>20</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>7</value>
+        <value>37</value>
+        <value>28</value>
+        <value>32</value>
+        <value>35</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+    <parameters applicable-location="point21">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>81</value>
+        <value>84</value>
+        <value>84</value>
+        <value>84</value>
+        <value>88</value>
+        <value>82</value>
+        <value>83</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>66</value>
+        <value>63</value>
+        <value>65</value>
+        <value>69</value>
+        <value>66</value>
+        <value>64</value>
+        <value xsi:nil="true"/>
+      </temperature>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>48</value>
+        <value>21</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>7</value>
+        <value>37</value>
+        <value>29</value>
+        <value>31</value>
+        <value>35</value>
+        <value>14</value>
+        <value>10</value>
+        <value>14</value>
+        <value xsi:nil="true"/>
+      </probability-of-precipitation>
+      <weather time-layout="k-p24h-n7-1">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Chance Thunderstorms">
+          <value coverage="chance" intensity="none" weather-type="thunderstorms" qualifier="none"/>
+          <value coverage="chance" intensity="light" additive="and" weather-type="rain showers" qualifier="none"/>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+        <name>Conditions Icons</name>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra50.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/scttsra40.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg</icon-link>
+        <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/tsra10.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p7d-n1-3">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions xsi:nil="true"/>
+      </hazards>
+    </parameters>
+  </data>
+</dwml>
