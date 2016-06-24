@@ -29,6 +29,7 @@
     </dependencies>
 
     <!-- This is the same set up we use for AWS Lambdas -->
+    <!-- http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html -->
     <build>
         <plugins>
             <plugin>
