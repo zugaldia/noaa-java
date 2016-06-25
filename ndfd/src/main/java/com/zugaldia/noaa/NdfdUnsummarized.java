@@ -2,6 +2,7 @@ package com.zugaldia.noaa;
 
 import com.zugaldia.noaa.models.UnsummarizedResponse;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -18,26 +19,39 @@ import java.util.Date;
  */
 public class NdfdUnsummarized {
 
+    private String baseUrl = Constants.BASE_URL;
+    private boolean enableDebug = false;
+
     private Builder builder;
     private Call<UnsummarizedResponse> call;
     private UnsummarizedService service;
 
-    private String baseUrl = Constants.BASE_URL;
-
     private NdfdUnsummarized(Builder builder) {
         this.builder = builder;
+    }
+
+    public String getBaseUrl() {
+        return baseUrl;
     }
 
     public void setBaseUrl(String baseUrl) {
         this.baseUrl = baseUrl;
     }
 
+    public boolean isEnableDebug() {
+        return enableDebug;
+    }
+
+    public void setEnableDebug(boolean enableDebug) {
+        this.enableDebug = enableDebug;
+    }
+
     private UnsummarizedService getService() {
         if (service != null) return service;
 
         Retrofit retrofit = new Retrofit.Builder()
-                .client(new OkHttpClient())
-                .baseUrl(baseUrl)
+                .client(getClient())
+                .baseUrl(getBaseUrl())
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
 
@@ -45,7 +59,19 @@ public class NdfdUnsummarized {
         return service;
     }
 
-    private Call<UnsummarizedResponse> getCall() {
+    private OkHttpClient getClient() {
+        if (isEnableDebug()) {
+            HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+            logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
+            OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+            httpClient.addInterceptor(logging);
+            return httpClient.build();
+        } else {
+            return new OkHttpClient();
+        }
+    }
+
+    public Call<UnsummarizedResponse> getCall() {
         if (call != null) return call;
 
         call = getService().getCall(
@@ -148,9 +174,10 @@ public class NdfdUnsummarized {
          * Location
          */
 
-        public void setLocation(double latitude, double longitude) {
+        public Builder setLocation(double latitude, double longitude) {
             lat = latitude;
             lon = longitude;
+            return this;
         }
 
         public Double getLat() {
@@ -169,42 +196,48 @@ public class NdfdUnsummarized {
             return product;
         }
 
-        public void setProduct(String product) {
+        public Builder setProduct(String product) {
             this.product = product;
+            return this;
         }
 
         public String getBegin() {
             return begin == null ? null : new SimpleDateFormat(Constants.DATE_FORMAT).format(begin);
         }
 
-        public void setBegin(Date begin) {
+        public Builder setBegin(Date begin) {
             this.begin = begin;
+            return this;
         }
 
         public String getEnd() {
             return begin == null ? null : new SimpleDateFormat(Constants.DATE_FORMAT).format(end);
         }
 
-        public void setEnd(Date end) {
+        public Builder setEnd(Date end) {
             this.end = end;
+            return this;
         }
 
         public String getUnit() {
             return unit;
         }
 
-        public void setUnit(String unit) {
+        public Builder setUnit(String unit) {
             this.unit = unit;
+            return this;
         }
 
         /*
          * Elements
          */
 
-        public void requestElement(String element) {
+        public Builder requestElement(String element) {
             if (!elements.contains(element)) {
                 elements.add(element);
             }
+
+            return this;
         }
 
         public String isElementRequested(String element) {

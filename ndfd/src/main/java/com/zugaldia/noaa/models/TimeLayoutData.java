@@ -18,7 +18,7 @@ public class TimeLayoutData {
     @ElementList(entry = "start-valid-time", type = String.class, inline=true)
     private List<String> startList;
 
-    @ElementList(entry = "end-valid-time", type = String.class, inline=true)
+    @ElementList(entry = "end-valid-time", type = String.class, inline=true, required = false)
     private List<String> endList;
 
     public TimeLayoutData() {
