@@ -111,3 +111,11 @@ test-fixtures:
 	# Summarized Data for a Subgrid Defined by a Center Point
 	curl --output ndfd/src/test/fixtures/response-summarized-07.xml \
 		"$(URL_SUMMARIZED)?centerPointLat=38.0&centerPointLon=-97.4&distanceLat=50.0&distanceLon=50.0&resolutionSquare=20.0&format=24+hourly&numDays=7"
+
+	#
+	# Other
+	#
+
+	# 10 common indicators + icons
+	curl --output ndfd/src/test/fixtures/response-unsummarized-16.xml \
+		"$(URL_UNSUMMARIZED)?lat=38.90962&lon=-77.04341&product=time-series&begin=$(DATE_BEGIN)&end=$(DATE_END)&maxt=maxt&mint=mint&temp=temp&appt=appt&pop12=pop12&snow=snow&rh=rh&wx=wx&wwa=wwa&sky=sky&icons=icons"
