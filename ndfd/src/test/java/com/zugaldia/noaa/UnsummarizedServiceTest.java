@@ -86,7 +86,7 @@ public class UnsummarizedServiceTest {
         assertEquals(temperature.getElementType(), "maximum");
         assertEquals(temperature.getUnits(), "Fahrenheit");
         assertEquals(temperature.getTimeLayout(), "k-p24h-n7-1");
-        assertArrayEquals(temperature.getValues(), new Integer[] {81, 84, 84, 84, 88, 82, 83});
+        assertArrayEquals(temperature.getValues(), new Double[] {81d, 84d, 84d, 84d, 88d, 82d, 83d});
     }
 
     @Test
