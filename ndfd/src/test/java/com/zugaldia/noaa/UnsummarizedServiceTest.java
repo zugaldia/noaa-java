@@ -1,8 +1,7 @@
 package com.zugaldia.noaa;
 
-import com.zugaldia.noaa.models.TemperatureData;
-import com.zugaldia.noaa.models.TimeLayoutData;
-import com.zugaldia.noaa.models.UnsummarizedResponse;
+import com.zugaldia.noaa.models.*;
+import com.zugaldia.noaa.models.elements.TemperatureData;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -77,13 +76,14 @@ public class UnsummarizedServiceTest {
         assertEquals(response.code(), 200);
 
         // Two temperatures
-        List<Object> parameters = response.body().getData().getParameters().getList();
-        assertEquals(parameters.size(), 2);
+        ParametersData parameters = response.body().getData().getParameters();
+        List<Object> list = parameters.getList();
+        assertEquals(list.size(), 2);
 
         // First one is the max
-        TemperatureData temperature = (TemperatureData) parameters.get(0);
+        TemperatureData temperature = (TemperatureData) parameters.getElement(ElementModel.MAXT);
         assertEquals(temperature.getName(), "Daily Maximum Temperature");
-        assertEquals(temperature.getTemperatureType(), "maximum");
+        assertEquals(temperature.getElementType(), "maximum");
         assertEquals(temperature.getUnits(), "Fahrenheit");
         assertEquals(temperature.getTimeLayout(), "k-p24h-n7-1");
         assertArrayEquals(temperature.getValues(), new Integer[] {81, 84, 84, 84, 88, 82, 83});
@@ -116,9 +116,9 @@ public class UnsummarizedServiceTest {
         Response<UnsummarizedResponse> response = client.executeCall();
         assertEquals(response.code(), 200);
 
-        List<Object> parameters = response.body().getData().getParameters().getList();
-        TemperatureData temperature = (TemperatureData) parameters.get(0);
-        Integer[] values = temperature.getValues();
+        ParametersData parameters = response.body().getData().getParameters();
+        TemperatureData temperature = (TemperatureData) parameters.getElement(ElementModel.MAXT);
+        Double[] values = temperature.getValues();
         String layoutKey = temperature.getTimeLayout();
         TimeLayoutData layout = response.body().getData().getTimeLayout(layoutKey);
 
