@@ -76,7 +76,7 @@ public class UnsummarizedServiceTest {
         assertEquals(response.code(), 200);
 
         // Two temperatures
-        ParametersData parameters = response.body().getData().getParameters();
+        ParametersData parameters = response.body().getData().getDefault();
         List<Object> list = parameters.getList();
         assertEquals(list.size(), 2);
 
@@ -116,7 +116,7 @@ public class UnsummarizedServiceTest {
         Response<UnsummarizedResponse> response = client.executeCall();
         assertEquals(response.code(), 200);
 
-        ParametersData parameters = response.body().getData().getParameters();
+        ParametersData parameters = response.body().getData().getDefault();
         TemperatureData temperature = (TemperatureData) parameters.getElement(ElementModel.MAXT);
         Double[] values = temperature.getValues();
         String layoutKey = temperature.getTimeLayout();

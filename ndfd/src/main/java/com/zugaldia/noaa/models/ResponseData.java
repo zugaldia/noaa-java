@@ -15,8 +15,8 @@ public class ResponseData {
     @ElementList(entry = "time-layout", inline = true)
     private List<TimeLayoutData> layouts;
 
-    @Element(name = "parameters")
-    private ParametersData parameters;
+    @ElementList(entry = "parameters", inline = true)
+    private List<ParametersData> parameters;
 
     public List<TimeLayoutData> getTimeLayouts() {
         return layouts;
@@ -32,8 +32,21 @@ public class ResponseData {
         return null;
     }
 
-    public ParametersData getParameters() {
+    public List<ParametersData> getParameters() {
         return parameters;
     }
 
+    public ParametersData getParameter(String location) {
+        for (ParametersData parameter: parameters) {
+            if (parameter.getApplicableLocation().equals(location)) {
+                return parameter;
+            }
+        }
+
+        return null;
+    }
+
+    public ParametersData getDefault() {
+        return getParameter("point1");
+    }
 }
