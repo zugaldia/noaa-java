@@ -173,7 +173,7 @@ public class CommonElementsTest {
         assertEquals(values.get(0).getWeatherType(), "thunderstorms");
         assertEquals(values.get(0).getQualifier(), "none");
         assertEquals(values.get(0).getVisibility().getUnits(), "statute miles");
-        assertEquals(values.get(0).getVisibility().getValue(), new Double(4));
+        assertEquals(values.get(0).getVisibility().getValue(), "4");
 
         assertEquals(values.get(1).getCoverage(), "chance");
         assertEquals(values.get(1).getIntensity(), "light");
@@ -181,7 +181,7 @@ public class CommonElementsTest {
         assertEquals(values.get(1).getQualifier(), "none");
         assertEquals(values.get(1).getAdditive(), "and");
         assertEquals(values.get(1).getVisibility().getUnits(), "statute miles");
-        assertEquals(values.get(1).getVisibility().getValue(), new Double(4));
+        assertEquals(values.get(1).getVisibility().getValue(), "4");
     }
 
     @Test

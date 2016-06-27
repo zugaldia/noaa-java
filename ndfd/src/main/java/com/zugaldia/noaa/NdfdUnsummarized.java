@@ -1,8 +1,16 @@
 package com.zugaldia.noaa;
 
+import com.zugaldia.noaa.models.ElementModel;
 import com.zugaldia.noaa.models.UnsummarizedResponse;
+import com.zugaldia.noaa.transformers.CustomDateTransformer;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.convert.Registry;
+import org.simpleframework.xml.convert.RegistryStrategy;
+import org.simpleframework.xml.core.Persister;
+import org.simpleframework.xml.strategy.Strategy;
+import org.simpleframework.xml.transform.RegistryMatcher;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -10,6 +18,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -52,11 +61,20 @@ public class NdfdUnsummarized {
         Retrofit retrofit = new Retrofit.Builder()
                 .client(getClient())
                 .baseUrl(getBaseUrl())
-                .addConverterFactory(SimpleXmlConverterFactory.create())
+                .addConverterFactory(SimpleXmlConverterFactory.create(getSerializer()))
                 .build();
 
         service = retrofit.create(UnsummarizedService.class);
         return service;
+    }
+
+    private Serializer getSerializer() {
+        // Custom date transformer
+        DateFormat dateFormat = new SimpleDateFormat(Constants.DATE_FORMAT);
+        RegistryMatcher registry = new RegistryMatcher();
+        registry.bind(Date.class, new CustomDateTransformer(dateFormat));
+        Serializer serializer = new Persister(registry);
+        return serializer;
     }
 
     private OkHttpClient getClient() {
@@ -77,61 +95,61 @@ public class NdfdUnsummarized {
         call = getService().getCall(
                 builder.getLat(), builder.getLon(),
                 builder.getProduct(), builder.getBegin(), builder.getEnd(), builder.getUnit(),
-                builder.isElementRequested("MAXT"),
-                builder.isElementRequested("MINT"),
-                builder.isElementRequested("TEMP"),
-                builder.isElementRequested("DEW"),
-                builder.isElementRequested("POP12"),
-                builder.isElementRequested("QPF"),
-                builder.isElementRequested("SKY"),
-                builder.isElementRequested("SNOW"),
-                builder.isElementRequested("WSPD"),
-                builder.isElementRequested("WDIR"),
-                builder.isElementRequested("WX"),
-                builder.isElementRequested("WAVEH"),
-                builder.isElementRequested("ICONS"),
-                builder.isElementRequested("RH"),
-                builder.isElementRequested("APPT"),
-                builder.isElementRequested("INCW34"),
-                builder.isElementRequested("INCW50"),
-                builder.isElementRequested("INCW64"),
-                builder.isElementRequested("CUMW34"),
-                builder.isElementRequested("CUMW50"),
-                builder.isElementRequested("CUMW64"),
-                builder.isElementRequested("CRITFIREO"),
-                builder.isElementRequested("DRYFIREO"),
-                builder.isElementRequested("CONHAZO"),
-                builder.isElementRequested("PTORNADO"),
-                builder.isElementRequested("PHAIL"),
-                builder.isElementRequested("PTSTMWINDS"),
-                builder.isElementRequested("PXTORNADO"),
-                builder.isElementRequested("PXHAIL"),
-                builder.isElementRequested("PXTSTMWINDS"),
-                builder.isElementRequested("PTOTSVRTSTM"),
-                builder.isElementRequested("PXTOTSVRTSTM"),
-                builder.isElementRequested("TMPABV14D"),
-                builder.isElementRequested("TMPBLW14D"),
-                builder.isElementRequested("TMPABV30D"),
-                builder.isElementRequested("TMPBLW30D"),
-                builder.isElementRequested("TMPABV90D"),
-                builder.isElementRequested("TMPBLW90D"),
-                builder.isElementRequested("PRCPABV14D"),
-                builder.isElementRequested("PRCPBLW14D"),
-                builder.isElementRequested("PRCPABV30D"),
-                builder.isElementRequested("PRCPBLW30D"),
-                builder.isElementRequested("PRCPABV90D"),
-                builder.isElementRequested("PRCPBLW90D"),
-                builder.isElementRequested("PRECIPA_R"),
-                builder.isElementRequested("SKY_R"),
-                builder.isElementRequested("TD_R"),
-                builder.isElementRequested("TEMP_R"),
-                builder.isElementRequested("WDIR_R"),
-                builder.isElementRequested("WSPD_R"),
-                builder.isElementRequested("WWA"),
-                builder.isElementRequested("WGUST"),
-                builder.isElementRequested("ICEACCUM"),
-                builder.isElementRequested("MAXRH"),
-                builder.isElementRequested("MINRH"));
+                builder.isElementRequested(ElementModel.MAXT),
+                builder.isElementRequested(ElementModel.MINT),
+                builder.isElementRequested(ElementModel.TEMP),
+                builder.isElementRequested(ElementModel.DEW),
+                builder.isElementRequested(ElementModel.POP12),
+                builder.isElementRequested(ElementModel.QPF),
+                builder.isElementRequested(ElementModel.SKY),
+                builder.isElementRequested(ElementModel.SNOW),
+                builder.isElementRequested(ElementModel.WSPD),
+                builder.isElementRequested(ElementModel.WDIR),
+                builder.isElementRequested(ElementModel.WX),
+                builder.isElementRequested(ElementModel.WAVEH),
+                builder.isElementRequested(ElementModel.ICONS),
+                builder.isElementRequested(ElementModel.RH),
+                builder.isElementRequested(ElementModel.APPT),
+                builder.isElementRequested(ElementModel.INCW34),
+                builder.isElementRequested(ElementModel.INCW50),
+                builder.isElementRequested(ElementModel.INCW64),
+                builder.isElementRequested(ElementModel.CUMW34),
+                builder.isElementRequested(ElementModel.CUMW50),
+                builder.isElementRequested(ElementModel.CUMW64),
+                builder.isElementRequested(ElementModel.CRITFIREO),
+                builder.isElementRequested(ElementModel.DRYFIREO),
+                builder.isElementRequested(ElementModel.CONHAZO),
+                builder.isElementRequested(ElementModel.PTORNADO),
+                builder.isElementRequested(ElementModel.PHAIL),
+                builder.isElementRequested(ElementModel.PTSTMWINDS),
+                builder.isElementRequested(ElementModel.PXTORNADO),
+                builder.isElementRequested(ElementModel.PXHAIL),
+                builder.isElementRequested(ElementModel.PXTSTMWINDS),
+                builder.isElementRequested(ElementModel.PTOTSVRTSTM),
+                builder.isElementRequested(ElementModel.PXTOTSVRTSTM),
+                builder.isElementRequested(ElementModel.TMPABV14D),
+                builder.isElementRequested(ElementModel.TMPBLW14D),
+                builder.isElementRequested(ElementModel.TMPABV30D),
+                builder.isElementRequested(ElementModel.TMPBLW30D),
+                builder.isElementRequested(ElementModel.TMPABV90D),
+                builder.isElementRequested(ElementModel.TMPBLW90D),
+                builder.isElementRequested(ElementModel.PRCPABV14D),
+                builder.isElementRequested(ElementModel.PRCPBLW14D),
+                builder.isElementRequested(ElementModel.PRCPABV30D),
+                builder.isElementRequested(ElementModel.PRCPBLW30D),
+                builder.isElementRequested(ElementModel.PRCPABV90D),
+                builder.isElementRequested(ElementModel.PRCPBLW90D),
+                builder.isElementRequested(ElementModel.PRECIPA_R),
+                builder.isElementRequested(ElementModel.SKY_R),
+                builder.isElementRequested(ElementModel.TD_R),
+                builder.isElementRequested(ElementModel.TEMP_R),
+                builder.isElementRequested(ElementModel.WDIR_R),
+                builder.isElementRequested(ElementModel.WSPD_R),
+                builder.isElementRequested(ElementModel.WWA),
+                builder.isElementRequested(ElementModel.WGUST),
+                builder.isElementRequested(ElementModel.ICEACCUM),
+                builder.isElementRequested(ElementModel.MAXRH),
+                builder.isElementRequested(ElementModel.MINRH));
         return call;
     }
 

@@ -13,8 +13,9 @@ public class WeatherConditionsVisibilityData {
     @Attribute(name = "units", required = false)
     private String units;
 
+    // Not a double, this can be something like "6+"
     @Text(required = false)
-    private Double value;
+    private String value;
 
     public WeatherConditionsVisibilityData() {
     }
@@ -23,7 +24,7 @@ public class WeatherConditionsVisibilityData {
         return units;
     }
 
-    public Double getValue() {
+    public String getValue() {
         return value;
     }
 }
