@@ -11,6 +11,15 @@ DATE_BEGIN=
 # should be in UTC time.
 DATE_END=
 
+maven-deployment:
+	cd lib; mvn clean deploy
+
+maven-release:
+	cd lib; mvn nexus-staging:release
+
+maven-cancel:
+	cd lib; mvn nexus-staging:drop
+
 install-local:
 	mvn install:install-file -DgroupId=com.github.zugaldia.noaa -DartifactId=ndfd -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dfile=lib/target/ndfd-1.0-SNAPSHOT.jar
 

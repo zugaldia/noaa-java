@@ -7,7 +7,34 @@
 
     <groupId>com.github.zugaldia.noaa</groupId>
     <artifactId>ndfd</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>A Java and Android library to access NOAA's National Digital Forecast Database (NDFD).</description>
+    <url>https://github.com/zugaldia/noaa-java</url>
+
+    <developers>
+        <developer>
+            <name>Antonio Zugaldia</name>
+            <email>antonio@zugaldia.net</email>
+            <organization>Antonio Zugaldia</organization>
+            <organizationUrl>http://www.zugaldia.net</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:zugaldia/noaa-java.git</connection>
+        <developerConnection>scm:git:git@github.com:zugaldia/noaa-java.git</developerConnection>
+        <url>git@github.com:zugaldia/noaa-java.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://github.com/zugaldia/noaa-java/blob/master/LICENSE</url>
+        </license>
+    </licenses>
 
     <dependencies>
         <dependency>
@@ -33,10 +60,22 @@
         </dependency>
     </dependencies>
 
-    <!-- This is the same set up we use for AWS Lambdas -->
-    <!-- http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
+
+            <!-- This is the same plugin we use for AWS Lambdas -->
+            <!-- http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -53,6 +92,60 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Publish to Maven -->
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 
