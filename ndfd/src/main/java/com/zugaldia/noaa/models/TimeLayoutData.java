@@ -29,11 +29,11 @@ public class TimeLayoutData {
         return layoutKey;
     }
 
-    public List<Date> getStartList() {
+    public List<Date> getUtcStartList() {
         return startList;
     }
 
-    public List<Date> getEndList() {
+    public List<Date> getUtcEndList() {
         return endList;
     }
 }

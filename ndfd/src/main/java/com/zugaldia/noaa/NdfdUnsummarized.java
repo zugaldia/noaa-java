@@ -22,6 +22,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by antonio on 6/24/16.
@@ -70,11 +71,11 @@ public class NdfdUnsummarized {
 
     private Serializer getSerializer() {
         // Custom date transformer
-        DateFormat dateFormat = new SimpleDateFormat(Constants.DATE_FORMAT);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(Constants.DATE_FORMAT_RESPONSE);
+        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         RegistryMatcher registry = new RegistryMatcher();
-        registry.bind(Date.class, new CustomDateTransformer(dateFormat));
-        Serializer serializer = new Persister(registry);
-        return serializer;
+        registry.bind(Date.class, new CustomDateTransformer(simpleDateFormat));
+        return new Persister(registry);
     }
 
     private OkHttpClient getClient() {
@@ -93,8 +94,8 @@ public class NdfdUnsummarized {
         if (call != null) return call;
 
         call = getService().getCall(
-                builder.getLat(), builder.getLon(),
-                builder.getProduct(), builder.getBegin(), builder.getEnd(), builder.getUnit(),
+                builder.getLat(), builder.getLon(), builder.getProduct(),
+                builder.getUtcBegin(), builder.getUtcEnd(), builder.getUnit(),
                 builder.isElementRequested(ElementModel.MAXT),
                 builder.isElementRequested(ElementModel.MINT),
                 builder.isElementRequested(ElementModel.TEMP),
@@ -184,8 +185,13 @@ public class NdfdUnsummarized {
         // Elements
         private ArrayList<String> elements;
 
+        // Date formatter
+        private SimpleDateFormat simpleDateFormat;
+
         public Builder() {
             elements = new ArrayList<String>();
+            simpleDateFormat = new SimpleDateFormat(Constants.DATE_FORMAT_REQUEST);
+            simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         }
 
         /*
@@ -219,20 +225,20 @@ public class NdfdUnsummarized {
             return this;
         }
 
-        public String getBegin() {
-            return begin == null ? null : new SimpleDateFormat(Constants.DATE_FORMAT).format(begin);
+        public String getUtcBegin() {
+            return begin == null ? null : simpleDateFormat.format(begin);
         }
 
-        public Builder setBegin(Date begin) {
+        public Builder setUtcBegin(Date begin) {
             this.begin = begin;
             return this;
         }
 
-        public String getEnd() {
-            return begin == null ? null : new SimpleDateFormat(Constants.DATE_FORMAT).format(end);
+        public String getUtcEnd() {
+            return begin == null ? null : simpleDateFormat.format(end);
         }
 
-        public Builder setEnd(Date end) {
+        public Builder setUtcEnd(Date end) {
             this.end = end;
             return this;
         }

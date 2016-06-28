@@ -103,10 +103,10 @@ public class UnsummarizedServiceTest {
         assertEquals(layouts.get(1).getLayoutKey(), "k-p24h-n6-2");
 
         // Values
-        assertEquals(layouts.get(0).getStartList().size(), 7);
-        assertEquals(layouts.get(0).getEndList().size(), 7);
-        assertEquals(layouts.get(1).getStartList().size(), 6);
-        assertEquals(layouts.get(1).getEndList().size(), 6);
+        assertEquals(layouts.get(0).getUtcStartList().size(), 7);
+        assertEquals(layouts.get(0).getUtcEndList().size(), 7);
+        assertEquals(layouts.get(1).getUtcStartList().size(), 6);
+        assertEquals(layouts.get(1).getUtcEndList().size(), 6);
     }
 
     @Test
@@ -123,8 +123,8 @@ public class UnsummarizedServiceTest {
         TimeLayoutData layout = response.body().getData().getTimeLayout(layoutKey);
 
         // Lists should match
-        assertEquals(values.length, layout.getStartList().size());
-        assertEquals(values.length, layout.getEndList().size());
+        assertEquals(values.length, layout.getUtcStartList().size());
+        assertEquals(values.length, layout.getUtcEndList().size());
     }
 
 }
