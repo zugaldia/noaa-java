@@ -12,7 +12,7 @@ DATE_BEGIN=
 DATE_END=
 
 install-local:
-	mvn install:install-file -DgroupId=com.zugaldia.noaa -DartifactId=ndfd -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dfile=ndfd/target/ndfd-1.0-SNAPSHOT.jar
+	mvn install:install-file -DgroupId=com.github.zugaldia.noaa -DartifactId=ndfd -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dfile=ndfd/target/ndfd-1.0-SNAPSHOT.jar
 
 test-fixtures:
 	#
