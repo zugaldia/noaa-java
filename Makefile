@@ -11,12 +11,16 @@ DATE_BEGIN=
 # should be in UTC time.
 DATE_END=
 
+# Snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/github/zugaldia/noaa/ndfd/
+# Releases: https://repo1.maven.org/maven2/com/github/zugaldia/noaa/ndfd/
 maven-deployment:
 	cd lib; mvn clean deploy
 
+# Unnecessary, we've set up pom.xml to autoReleaseAfterClose = true
 maven-release:
 	cd lib; mvn nexus-staging:release
 
+# Unnecessary, we've set up pom.xml to autoReleaseAfterClose = true
 maven-cancel:
 	cd lib; mvn nexus-staging:drop
 
