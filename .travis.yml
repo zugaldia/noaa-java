@@ -1,2 +1,2 @@
 language: java
-script: cd ndfd; mvn test
+script: cd lib; mvn test
